@@ -1,0 +1,38 @@
+.dsmovie-list {
+
+    background-color: rgb(221, 221, 221);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    margin-top: 8vh;
+    margin-inline: 8vh;
+    height: minmax(50vh, 200vh);
+    margin-bottom: 8rem;
+
+    /* padding-inline: 2rem; */
+}
+
+.dsmovie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    justify-content: first baseline;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.dsmovie-empty-list {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(156, 156, 156);
+}
+
+@media (max-width: 600px) {
+    .dsmovie-grid {
+        margin-inline: 0;
+        justify-content: start;
+    }
+}
