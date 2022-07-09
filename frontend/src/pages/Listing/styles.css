@@ -1,0 +1,117 @@
+* {
+    /* height: 100%; */
+}
+
+.dsmovie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    background-color: rgb(221, 221, 221);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    margin-top: 8vh;
+    margin-inline: 8vh;
+    height: 100%;
+    margin-bottom: 10rem;
+}
+
+.FAKECARD {
+    background-color: rgb(161, 15, 15);
+    margin: 1rem;
+    border-radius: 16px;
+    height: 300px;
+
+    position: static;
+    float: left;
+}
+
+.FAKECARD img {
+    width: minmax(300px, 13rem);
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.FAKECARD h1, .FAKECARD h3 {
+    position: absolute;
+    font-size: larger;
+
+    top: 20%;
+    left: 0%;
+    color: white;
+    font-family: sans-serif;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.2s linear;
+    background-color: black;
+    border-radius: 0px 8px 8px 0px;
+    opacity: 0;
+    max-width: 200px;
+    max-height: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
+.FAKECARD span h3 {
+    top: 40%;
+}
+
+.FAKECARD .hight h3 {
+    background-color: rgb(49, 172, 18);
+}
+
+.FAKECARD .medium h3 {
+    background-color: rgb(255, 187, 0);
+}
+
+.FAKECARD .low h3 {
+    background-color: rgb(187, 13, 7);
+}
+
+.FAKECARD:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: 0.2s;
+}
+
+.FAKECARD:hover h1, .FAKECARD:hover h3 {
+    padding: 0 1rem;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+.FAKECARD:hover h3 {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .dsmovie-list {
+        margin-inline: 0;
+        justify-content: start;
+    }
+
+    .FAKECARD {
+        height: 100px;
+        width: 100%;
+        margin: 0.2rem;
+    }
+
+    .FAKECARD img {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+    }
+    
+    .FAKECARD h1, .FAKECARD h3 {
+        position: absolute;
+        visibility: visible;
+        opacity: 1;
+    }
+}
