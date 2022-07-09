@@ -7,8 +7,10 @@
 
     margin-top: 8vh;
     margin-inline: 8vh;
-    min-height: 50vh;
-    margin-bottom: 10rem;
+    height: minmax(50vh, 200vh);
+    margin-bottom: 8rem;
+
+    /* padding-inline: 2rem; */
 }
 
 .dsmovie-grid {
@@ -20,9 +22,10 @@
 }
 
 .dsmovie-empty-list {
+    height: 50vh;
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    align-items: center;
     
     color: rgb(156, 156, 156);
 }

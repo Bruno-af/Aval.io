@@ -29,7 +29,7 @@ function Card( item:CardData ) {
                     'low'))
                 : 'underfined'
             }>
-                <h1 className="dsmovie-card-title">{(item.title && item.title!='')?item.title:'Title'}</h1>
+                <h1 className="dsmovie-card-title">{(item.title)?item.title:'Title'}</h1>
                 <h3>{item.avaliation.toFixed(1)}</h3>
             </span>
         </div>
