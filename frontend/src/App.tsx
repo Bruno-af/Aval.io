@@ -4,7 +4,7 @@ import {
   } from "react-router-dom";
   import Listing from 'pages/Listing';
   import Form from 'pages/Form';
-  import Index from 'pages/Index';
+  import Home from 'pages/Home';
   import Navbar from "components/Navbar";
   import Footer from "components/Footer";
   
@@ -13,7 +13,7 @@ import {
       <>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Listing" element={<Listing />} />
           <Route path="/form">
             <Route path=":movieId" element={<Form />} />

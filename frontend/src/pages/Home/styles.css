@@ -1,0 +1,89 @@
+.home-suggestions {
+    background-color: rgb(221, 221, 221);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    margin-top: 8vh;
+    margin-inline: 8vh;
+    height: minmax(50vh, 200vh);
+    margin-bottom: 8rem;
+
+    display: grid;
+    /* grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr; */
+    grid-template-areas: 
+        "highlights highlights b"
+        "highlights highlights c"
+    ;
+    padding: 1rem;
+}
+
+.home-suggestions-highlights {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    min-width: 8rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: highlights;
+}
+
+.home-suggestions-item2 {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-suggestions-item3 {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-suggestions-item4 {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-suggestions-item5 {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-suggestions-item6 {
+    background-color: rgb(161, 15, 15);
+    margin: 0.2rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
